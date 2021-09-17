@@ -1,0 +1,41 @@
+@import "../../global-styles/variables.scss";
+.resume-link-wrapper {
+  text-decoration: none;
+  color: $primary-text-color;
+
+  .resume-link-container {
+    width: 13rem;
+    height: 6rem;
+    padding: 0 1rem;
+    background-color: #707877;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    transition: transform 0.3s ease-in;
+    @media screen and (max-width: 768px) {
+      width: 16rem;
+      height: 9rem;
+    }
+
+    .resume-link-content {
+      font-size: 2rem;
+      text-decoration: none;
+    }
+
+    .resume-logo {
+      height: 3.5rem;
+      width: 3.5rem;
+      @media screen and (max-width: 768px) {
+        width: 6.3rem;
+        height: 6rem;
+      }
+    }
+  }
+  .hover-right {
+    &:hover {
+      transform: translateX(9rem);
+    }
+  }
+}

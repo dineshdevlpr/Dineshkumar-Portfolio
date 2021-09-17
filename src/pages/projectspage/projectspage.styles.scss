@@ -1,0 +1,11 @@
+.projects-page {
+	position: relative;
+}
+
+.fixed-links-projects-page {
+	position: fixed;
+	top: 50%;
+	transform: translateY(-50%);
+	left: -9.5rem;
+	z-index: 1000;
+}
