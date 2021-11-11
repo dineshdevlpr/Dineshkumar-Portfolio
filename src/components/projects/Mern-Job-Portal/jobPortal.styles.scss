@@ -10,7 +10,7 @@
   z-index: 600;
 }
 
-.project-keeper {
+.project-portal {
   height: 70vh;
   width: 85vw;
   border: 2px solid rgba(254, 197, 118, 0.8);
@@ -24,8 +24,8 @@
     height: 60vh;
   }
 
-  .screenshot-keeper {
-    background-image: url(../../../assets/keeper.JPG);
+  .screenshot-portal {
+    background-image: url(../../../assets/portal.JPG);
     background-color: $dark-gray-color;
     background-repeat: no-repeat;
     background-position: center;
@@ -112,8 +112,8 @@
       }
     }
 
-    .screenshot-mobile-keeper {
-      background-image: url(../../../assets/keeper.JPG);
+    .screenshot-mobile-portal {
+      background-image: url(../../../assets/portal.JPG);
       background-color: $dark-gray-color;
       background-repeat: no-repeat;
       background-position: center;

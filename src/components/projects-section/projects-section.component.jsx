@@ -9,7 +9,7 @@ import UrlShort from '../projects/MERN-URL-SHORTENER/urlShort.component';
 import Secrets from '../projects/Secrets-App/secrets.component';
 import TicTacToe from '../projects/Tic-Tac-Toe-App/tic-tac-toe.component';
 import TodoApp from '../projects/Todo-App/todo-app.component';
-import Keeper from '../projects/Notes-Keeper/keeper.component';
+import JobPortal from '../projects/Mern-Job-Portal/jobPortal.component';
 import ExpTrack from '../projects/Mern-Expense-Tracker/expTrack.component';
 //animations
 import { motion } from 'framer-motion';
@@ -24,7 +24,7 @@ const ProjectsSection = () => {
     const [showSecretsProject, setSecretsProject] = useState(false);
     const [showTicTacToe, setTicTacToe] = useState(false);
     const [showTodoProject, setTodoProject] = useState(false);
-    const [showKeeper, setKeeper] = useState(false);
+    const [showJobPortal, setJobPortal] = useState(false);
 
 
     const controls = useAnimation();
@@ -59,9 +59,9 @@ const ProjectsSection = () => {
                     <p className='preview-title'>ToDo - React App</p>
                     <CustomButton text='View Project' eye onClick={() => setTodoProject(!showTodoProject)}/>
                 </motion.div>
-                <motion.div className='keeper' variants={fadeInOut}>
-                    <p className='preview-title'>Keeper App</p>
-                    <CustomButton text='View Project' eye onClick={() => setKeeper(!showKeeper)}/>
+                <motion.div className='portal' variants={fadeInOut}>
+                    <p className='preview-title'>Job Portal App</p>
+                    <CustomButton text='View Project' eye onClick={() => setJobPortal(!showJobPortal)}/>
                 </motion.div>
             </motion.div>
 
@@ -70,7 +70,7 @@ const ProjectsSection = () => {
             <Secrets showSecretsProject={showSecretsProject} setSecretsProject={setSecretsProject}/>
             <TicTacToe showTicTacToe={showTicTacToe} setTicTacToe={setTicTacToe}/>
             <TodoApp showTodoProject={showTodoProject} setTodoProject={setTodoProject}/>
-            <Keeper showKeeper={showKeeper} setKeeper={setKeeper}/>
+            <JobPortal showJobPortal={showJobPortal} setJobPortal={setJobPortal}/>
             <SectionWave />
         </section>
     )

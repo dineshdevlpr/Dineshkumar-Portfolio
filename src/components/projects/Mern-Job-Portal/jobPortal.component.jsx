@@ -1,6 +1,6 @@
 import React from 'react';
 //styles
-import './urlShort.styles.scss';
+import './jobPortal.styles.scss'
 
 //svg
 import xIcon from '../../../assets/xIcon.svg';
@@ -23,19 +23,19 @@ const projectContainer = {
     
 }
 
-const UrlShort = ({showUrlShort, setUrlShort}) => {
+const JobPortal = ({showJobPortal, setJobPortal}) => {
     return (
         <AnimatePresence exitBeforeEnter>
-        {showUrlShort && 
+        {showJobPortal && 
         <motion.div className='backdrop' variants={backdrop} initial="hidden" animate="visible">
-            <motion.div className='url-short' variants={projectContainer} initial="hidden" animate="visible" exit="hidden">
-                <div className='screenshot'></div>
+            <motion.div className='project-portal' variants={projectContainer} initial="hidden" animate="visible" exit="hidden">
+                <div className='screenshot-portal'></div>
                 <div className='details'>
-                    <div className='x-button' onClick={() => setUrlShort(false)}>
+                    <div className='x-button' onClick={() => setJobPortal(false)}>
                         <img src={xIcon} alt='exit icon'/>
                     </div>
-                    <h2 className='project-title'><span>U</span>RL Shortener</h2>
-                    <div className='screenshot-mobile'></div>
+                    <h2 className='project-title'><span>J</span>ob Portal App</h2>
+                    <div className='screenshot-mobile-portal'></div>
                     <div className='tech-stack'>
                         <TechNameBox text={'html 5'} />
                         <TechNameBox text={'css 3'} />
@@ -46,11 +46,11 @@ const UrlShort = ({showUrlShort, setUrlShort}) => {
                         <TechNameBox text={'mongoDB'} />
                         <TechNameBox text={'JWT'} />
                     </div>
-                    <p className='project-description'>This is an URL Shortener App, that features functionalities like authentication with two step activation, Creating and Viewing Short-Urls and storing the user credentials and url data to MongoDB with Node Js as Backend Language. </p>
+                    <p className='project-description'>Job Portal MERN App with seperate Portals for Candidates and Recruiters with Token Based Authentication</p>
                     <div className='project-details-buttons'>
-                            <CustomButton eye isLink LinkTo='https://createshorturl.netlify.app/' text={'demo'}/>
-                            <CustomButton code isLink LinkTo='https://github.com/dineshdevlpr/URL-Shortener-React' text={'FE'}/>
-                            <CustomButton code isLink LinkTo='https://github.com/dineshdevlpr/URL-shortener-Backend' text={'BE'}/>
+                        <CustomButton eye isLink LinkTo='https://jobportal-by-dinesh.netlify.app/' text={'demo'}/>
+                        <CustomButton code isLink LinkTo='https://github.com/dineshdevlpr/Job-Portal-React' text={'FE'}/>
+                        <CustomButton code isLink LinkTo='https://github.com/dineshdevlpr/Job-Portal-Backend' text={'BE'}/>
                     </div>
                 </div>
                 
@@ -61,4 +61,4 @@ const UrlShort = ({showUrlShort, setUrlShort}) => {
     )
 }
 
-export default UrlShort;
+export default JobPortal;
